@@ -45,3 +45,37 @@
     node index.js
     ```
 - Results show test in the terminal
+
+# What is a Module in Node.js?
+- Consider modules to be the same as JavaScript libraries.
+- A set of functions you want to include in your application.
+### Example 
+- Node.js has a set of built-in modules which you can use without any further installation.
+- maths.js
+- email.js
+- image.js
+- index.js
+- otp.js
+### how to use modules 
+- To include a module, use the "require()" function with the name of the module:
+- this is use in index.js file 
+```
+const math= require("./maths");
+console.log(math)
+
+```
+- Now check  if ( node index.js ) results : {} 
+- Go to math.js file and export function 
+```
+function add(a,b){
+    return a + b;
+}
+
+```
+- module.exports=functionName;
+```
+module.exports="test";
+```
+- Now check ( node index.js ) results: test
+
+
