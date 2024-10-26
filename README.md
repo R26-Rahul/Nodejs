@@ -77,5 +77,32 @@ function add(a,b){
 module.exports="test";
 ```
 - Now check ( node index.js ) results: test
+## practicals in index.js and maths.js
+
+
+# Node.js File System Module
+- The Node.js file system module allows you to work with the file system on your computer.
+### type of module 
+- in-built module,
+- built-in module,
+- predefined module
+- user definded module
+
+### in-built
+- Node.js as a File Server
+```
+var fs = require("fs")
+```
+- Common use for the File System module:
+    - Read files
+    - Create files
+    - Update files
+    - Delete files
+    - Rename files
+- read files  practical here
+- please install nodemon 
+```
+npm i nodemon -g
+```
 
 
