@@ -29,12 +29,12 @@
 ## Node.js Get Started
 - Downalod Node.js {https://nodejs.org/}
 - default setting and countinus next install 
-### Open code editor and go to terminal type 
+- Open code editor and go to terminal type 
     ```
     node -v
     ```
 
-### Now can check with Javascript file (copy and paste in the js file )
+- Now can check with Javascript file (copy and paste in the js file )
     ```
     console.log("Test")
     ```
