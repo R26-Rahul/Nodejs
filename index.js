@@ -21,13 +21,18 @@ const http=require("http");
 req -> reqest from clint side 
 res -> response from server side
 */
+const url =require("url");
 const server =http.createServer(function(req, res){
 /* samethings write on browser using "write()" */
     // res.writeHead(200,{'Content-Type': "text/plain"})// show head content type
     res.write("<h1>Rahul</h1>")
+    /* url parse to use for received data from broswer , you want propar in object then type "true" */
+    var info =url.parse(req.url, true)
+    console.log(info);
+    
 /* response end the sesion using "end()" */
-
     res.end()
+
 });
 /*like a domian name and port no.: "listen(8080)"  go to browser and search url "http://localhost:8080"*/
 server.listen(8080);
